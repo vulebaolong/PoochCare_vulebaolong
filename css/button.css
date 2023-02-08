@@ -1,0 +1,68 @@
+.btn {
+    transition: all 0.3s;
+}
+
+.btn:active {
+    transform: translateY(1px);
+    color: var(--white) !important;
+}
+
+/* button carousel*/
+.carousel-section_btn {
+    color: var(--color-primary);
+}
+.carousel-section_btn-ouline:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--white);
+}
+
+/* button plans and subscribe*/
+
+/* màu xanh */
+/* ============================================================== */
+.plans_item a {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+/* hover */
+.plans_item a:hover {
+    background-color: rgba(var(--color-primary-rgb), 0.7);
+    border-color: rgba(var(--color-primary-rgb), 0.7);
+    color: var(--white);
+}
+
+.plans_item :not(.btn-check) + .btn:active,
+.carousel :not(.btn-check) + .btn:active {
+    background-color: rgba(var(--color-primary-rgb), 0.7);
+    border-color: rgba(var(--color-primary-rgb), 0.7);
+}
+/* ============================================================== */
+
+/* màu dỏ */
+/* ============================================================== */
+
+.subscribe .btn {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+/* hover */
+
+.subscribe .btn:hover {
+    background-color: rgba(var(--color-secondary-rgb), 0.7);
+    border-color: rgba(var(--color-secondary-rgb), 0.7);
+    color: var(--white);
+}
+
+.subscribe :not(.btn-check) + .btn:active,
+.subscribe .btn:first-child:active {
+    background-color: rgba(var(--color-secondary-rgb), 0.7);
+    border-color: rgba(var(--color-secondary-rgb), 0.7);
+}
+/* ============================================================== */

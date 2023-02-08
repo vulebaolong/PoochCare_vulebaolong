@@ -1,0 +1,73 @@
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* dot */
+    .carousel-indicators [data-bs-target] {
+        --wh: 0.6rem;
+        width: var(--wh);
+        height: var(--wh);
+        border-bottom: unset;
+        transition: all 0.7s;
+    }
+    /* dot active */
+    .carousel-indicators .active {
+        width: 1.5rem;
+        border-radius: 5px;
+        background-color: var(--color-primary) !important;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(0%, 50%);
+        padding-top: unset;
+        padding-bottom: unset;
+        color: #fff;
+        text-align: start;
+        width: 70%;
+    }
+
+    .plans_item.active:hover {
+        box-shadow: rgba(var(--color-primary-rgb), 0.2) 0px 7px 29px 0px;
+        transform: scale(1.2);
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .plans_item.active {
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+
+    .header .navbar > div:last-child {
+        box-shadow: unset;
+        margin-right: 4rem;
+    }
+
+    .navbar_mobile {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* dot */
+    .carousel-indicators [data-bs-target],
+    .swiper-pagination-bullet {
+        --wh: 0.75rem;
+        width: var(--wh);
+        height: var(--wh);
+        opacity: 0.5;
+    }
+    /* dot active */
+    .carousel-indicators .active,
+    .swiper-pagination-bullet-active {
+        width: 1.8rem;
+        border-radius: 7px;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,15 @@
+.row-gap-5 {
+    row-gap: 3rem !important;
+}
+.row-gap-3 {
+    row-gap: 1rem !important;
+}
+
+.navbar-toggler {
+    border: 1px solid var(--color-bor-navbar-toggler);
+    color: var(--color-navbar-toggler);
+}
+
+.navbar-toggler .navbar-toggler-icon svg path {
+    stroke: var(--color-icon-nav);
+}

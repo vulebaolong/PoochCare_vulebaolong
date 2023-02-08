@@ -1,0 +1,34 @@
+[data-bs-theme="light"] {
+    /* nền sáng */
+    --color-bg-body: #f8f9fa;
+
+    /* màu chữ nền sáng*/
+    --color-text-1-bgInLight: #212529;
+    /* màu chữ tối hớn level 1 */
+    --color-text-2-bgInLight: #212529cc;
+    /* --color-text-2-bgInDark: #afafaf; */
+
+    --color-section: #fff;
+
+    --color-bg-plan_item: #fff;
+
+    --color-bg-service_icon: #161616;
+
+    --box-shadow1: rgba(149, 157, 165, 0.2) 0px 2px 24px;
+
+    --color-dot-testimonials: #000000a3;
+
+    /* ===================================================== */
+    --color-body: #212529;
+
+    --color-bg-futures_item: #e9ecef;
+
+    --color-bg-dropdown_menu: #fff;
+
+    --color-bg-dropdown_item-hover: #f8f9fa;
+    --color-text-dropdown_item-active: #fff;
+
+    --color-bor-navbar-toggler: rgba(0, 0, 0, 0.15);
+
+    --color-icon-nav: rgba(33, 37, 41, 0.75);
+}

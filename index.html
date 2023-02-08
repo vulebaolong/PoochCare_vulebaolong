@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pooch Care</title>
+
+        <!-- FONT ANWESOME -->
+        <link href="./awesome/css/all.min.css" rel="stylesheet" />
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- BOOTSTRAP -->
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        /> -->
+        <!-- <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" /> -->
+        <link rel="stylesheet" href="./main.scss" />
+
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="./library/swiper/swiper-bundle.min.css" />
+
+        <!-- THEME DARK / LIGHT -->
+        <link rel="stylesheet" href="./css/theme_dark.css" />
+        <link rel="stylesheet" href="./css/theme_light.css" />
+
+        <!-- UTILITIES -->
+        <link rel="stylesheet" href="./css/utilities.css" />
+        <!-- BASE -->
+        <link rel="stylesheet" href="./css/base.css" />
+
+        <!-- STYLE -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- BUTTON -->
+        <link rel="stylesheet" href="./css/button.css" />
+
+        <!-- QUERY -->
+        <link rel="stylesheet" href="./css/query.css" />
+    </head>
+    <body>
+        <header class="header bg-body-tertiary" id="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary container-lg">
+                <div class="nav_box bg-body-tertiary">
+                    <div class="container">
+                        <h1>
+                            <a
+                                class="header__logo navbar-brand fs-2 fw-semibold"
+                                href="#"
+                                >Pooch Care</a
+                            >
+                        </h1>
+                        <div
+                            class="navbar_mobile d-flex align-items-center gap-3"
+                        >
+                            <li class="d-flex align-items-center fs-2">
+                                <i class="icon_light fa-solid fa-sun hide"></i>
+                                <i class="icon_dark fa-solid fa-moon"></i>
+                            </li>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 30 30"
+                                    >
+                                        <path
+                                            stroke="rgba(255, 255, 255, 0.55)"
+                                            stroke-linecap="round"
+                                            stroke-miterlimit="10"
+                                            stroke-width="2"
+                                            d="M4 7h22M4 15h22M4 23h22"
+                                        />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-full bg-body-tertiary text-center">
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav ms-auto gap-3 fs-5 mt-4 mt-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#carousel"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services"
+                                    >Services</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nutrition"
+                                    >Gallery</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Blog
+                                </a>
+                                <div class="container">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Something else here</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#plans">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="carousel-section" id="carousel">
+                <div class="container-fluid">
+                    <div
+                        id="carousel_Autoplaying"
+                        class="carousel slide"
+                        data-bs-ride="carousels"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carousel_Autoplaying"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carousel_Autoplaying"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carousel_Autoplaying"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="filter2">
+                                    <img
+                                        src="./img/carousel_dog1.jpg"
+                                        class="d-block w-100"
+                                        alt="carousel imge dog 1"
+                                    />
+                                </div>
+
+                                <div class="carousel-caption">
+                                    <h5
+                                        class="carousel-section-title d-none d-md-block"
+                                    >
+                                        Quality Things for Loving Pets
+                                    </h5>
+                                    <p
+                                        class="carousel-section-desc mb-5 d-none d-md-block"
+                                    >
+                                        Keeps your Pet Smiling
+                                    </p>
+                                    <div class="d-block d-sm-none">
+                                        <a
+                                            class="carousel-section_btn btn btn-light btn-sm"
+                                            >Read More</a
+                                        >
+                                        <a
+                                            class="carousel-section_btn-ouline btn btn-outline-light btn-sm"
+                                            >Contact Us</a
+                                        >
+                                    </div>
+                                    <div class="d-none d-sm-block d-lg-none">
+                                        <a
+                                            class="carousel-section_btn btn btn-light btn-md"
+                                            >Read More</a
+                                        >
+                                        <a
+                                            class="carousel-section_btn-ouline btn btn-outline-light btn-md"
+                                            >Contact Us</a
+                                        >
+                                    </div>
+                                    <div class="d-none d-lg-block">
+                                        <a
+                                            class="carousel-section_btn btn btn-light btn-lg"
+                                            >Read More</a
+                                        >
+                                        <a
+                                            class="carousel-section_btn-ouline btn btn-outline-light btn-lg"
+                                            >Contact Us</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="filter2">
+                                    <img
+                                        src="./img/carousel_dog2.jpg"
+                                        class="d-block w-100"
+                                        alt="carousel imge dog 2 "
+                                    />
+                                </div>
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="carousel-section-title">
+                                        Delivering happiness for Pets
+                                    </h5>
+                                    <p class="carousel-section-desc mb-5">
+                                        For the love of pets
+                                    </p>
+                                    <a
+                                        class="carousel-section_btn btn btn-light btn-lg"
+                                        >Read More</a
+                                    >
+                                    <a
+                                        class="carousel-section_btn-ouline btn btn-outline-light btn-lg"
+                                        >Contact Us</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="filter1">
+                                    <img
+                                        src="./img/carousel_dog3.jpg "
+                                        class="d-block w-100"
+                                        alt="carousel imge dog 3"
+                                    />
+                                </div>
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="carousel-section-title">
+                                        Quality Things for Loving Pets
+                                    </h5>
+                                    <p class="carousel-section-desc mb-5">
+                                        We help your Projects
+                                    </p>
+                                    <a
+                                        class="carousel-section_btn btn btn-light btn-lg"
+                                        >Read More</a
+                                    >
+                                    <a
+                                        class="carousel-section_btn-ouline btn btn-outline-light btn-lg"
+                                        >Contact Us</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carousel_Autoplaying"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carousel_Autoplaying"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section" id="about">
+                <div class="container">
+                    <div class="about text-center">
+                        <h2 class="heading-1">ABOUT US</h2>
+                        <h3 class="heading-2">
+                            We Love Your Pets Like They Are Our Own
+                        </h3>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Consequuntur hic odio voluptatem tenetur
+                            consequatur. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia
+                            Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+                            sodales quis.
+                        </p>
+                        <a class="btn_link" href="#">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <div class="container">
+                    <div class="features">
+                        <div class="row flex-wrap gap-0 row-gap-5">
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <div class="features_item p-5">
+                                    <div class="features_icon">
+                                        <i class="fa-solid fa-snowflake"></i>
+                                    </div>
+                                    <a class="heading-3" href="#"
+                                        >Dog Walking</a
+                                    >
+                                    <p class="para">
+                                        Vivamus a ligula quam. Ut blandit eu leo
+                                        non. Duis sed doloramet laoreet. Lorem
+                                        ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a class="btn_link" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <div class="features_item p-5">
+                                    <div class="features_icon">
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                    <a class="heading-3" href="#"
+                                        >Dog Walking</a
+                                    >
+                                    <p class="para">
+                                        Vivamus a ligula quam. Ut blandit eu leo
+                                        non. Duis sed doloramet laoreet. Lorem
+                                        ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a class="btn_link" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <div class="features_item p-5">
+                                    <div class="features_icon">
+                                        <i class="fa-solid fa-hands"></i>
+                                    </div>
+                                    <a class="heading-3" href="#"
+                                        >Dog Walking</a
+                                    >
+                                    <p class="para">
+                                        Vivamus a ligula quam. Ut blandit eu leo
+                                        non. Duis sed doloramet laoreet. Lorem
+                                        ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a class="btn_link" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <div class="features_item p-5">
+                                    <div class="features_icon">
+                                        <i class="fa-solid fa-sitemap"></i>
+                                    </div>
+                                    <a class="heading-3" href="#"
+                                        >Dog Walking</a
+                                    >
+                                    <p class="para">
+                                        Vivamus a ligula quam. Ut blandit eu leo
+                                        non. Duis sed doloramet laoreet. Lorem
+                                        ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a class="btn_link" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <div class="features_item p-5">
+                                    <div class="features_icon">
+                                        <i class="fa-solid fa-shower"></i>
+                                    </div>
+                                    <a class="heading-3" href="#"
+                                        >Dog Walking</a
+                                    >
+                                    <p class="para">
+                                        Vivamus a ligula quam. Ut blandit eu leo
+                                        non. Duis sed doloramet laoreet. Lorem
+                                        ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a class="btn_link" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <div class="features_item p-5">
+                                    <div class="features_icon">
+                                        <i class="fa-solid fa-user-doctor"></i>
+                                    </div>
+                                    <a class="heading-3" href="#"
+                                        >Dog Walking</a
+                                    >
+                                    <p class="para">
+                                        Vivamus a ligula quam. Ut blandit eu leo
+                                        non. Duis sed doloramet laoreet. Lorem
+                                        ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a class="btn_link" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section" id="services">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="services_img filter3">
+                                <img src="./img/services.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="services_content mt-5 mt-lg-0">
+                                <div class="services_title">
+                                    <h2 class="heading-1">WHY CHOOSE US</h2>
+                                    <h3 class="heading-2">
+                                        What We Offer For You
+                                    </h3>
+                                    <p class="para">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicingelit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud.Lorem ipsum dolor sit amet,
+                                        consectetur adipisicingelit,
+                                    </p>
+                                </div>
+                                <ul
+                                    class="services_list d-flex flex-column gap-3 mt-5"
+                                >
+                                    <li class="d-flex align-items-center gap-3">
+                                        <div class="service_icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <p class="fw-semibold">
+                                            Certified Groomer
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3">
+                                        <div class="service_icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <p class="fw-semibold">
+                                            10 Years of Experience
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3">
+                                        <div class="service_icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <p class="fw-semibold">Pet Lover</p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3">
+                                        <div class="service_icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <p class="fw-semibold">
+                                            Customer Supports
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3">
+                                        <div class="service_icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <p class="fw-semibold">
+                                            Veterinary Help
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="number-section">
+                <div class="container">
+                    <div class="number">
+                        <div class="row row-gap-5">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="text-center">
+                                    <p
+                                        class="number_num fs-1 fw-bold mb-3"
+                                        id="number0"
+                                    >
+                                        0
+                                    </p>
+                                    <p class="number_text">Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="text-center">
+                                    <p
+                                        class="number_num fs-1 fw-bold mb-3"
+                                        id="number1"
+                                    >
+                                        0
+                                    </p>
+                                    <p class="number_text">Professionals</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="text-center">
+                                    <p
+                                        class="number_num fs-1 fw-bold mb-3"
+                                        id="number2"
+                                    >
+                                        0
+                                    </p>
+                                    <p class="number_text">Adopted Pets</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="text-center">
+                                    <p
+                                        class="number_num fs-1 fw-bold mb-3"
+                                        id="number3"
+                                    >
+                                        0
+                                    </p>
+                                    <p class="number_text">Awards</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="plans-section" id="plans">
+                <div class="container">
+                    <div class="plans">
+                        <div class="plans_title text-center">
+                            <h2 class="heading-1">Our Plans</h2>
+                            <h3 class="heading-2">Affordable Packages</h3>
+                        </div>
+                        <div class="plans_conntent">
+                            <div class="row gap-0 row-gap-3">
+                                <div class="col-12 col-lg-4">
+                                    <div class="plans_item text-center p-5">
+                                        <h4 class="heading-3">Free package</h4>
+                                        <h5
+                                            class="plans_pricing d-flex justify-content-center my-4"
+                                        >
+                                            <label
+                                                class="align-self-start fw-semibold"
+                                                >$</label
+                                            >
+                                            <span
+                                                class="plans_num align-self-baseline fw-semibold"
+                                                >0</span
+                                            >
+                                            <span
+                                                class="plans_mond align-self-baseline text-opacity-50"
+                                                >/month</span
+                                            >
+                                        </h5>
+                                        <ul
+                                            class="plans_list d-flex flex-column fs-6 gap-2 mt-3"
+                                        >
+                                            <li>5 Dog Walk</li>
+                                            <li>3 Vet Visit</li>
+                                            <li>3 Pet Spa</li>
+                                            <li>Free Supports</li>
+                                            <li>Customer Support</li>
+                                        </ul>
+                                        <a class="btn mt-4" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-12 col-lg-4 order-first order-lg-0"
+                                >
+                                    <div class="plans_item active text-center">
+                                        <div
+                                            class="p-4 pt-5 align-self-stretch"
+                                        >
+                                            <span class="plans_save"
+                                                >SAVE 10%</span
+                                            >
+                                            <h4 class="heading-3 m-0 mt-3 mb-3">
+                                                Standard Package
+                                            </h4>
+                                            <h5
+                                                class="plans_pricing d-flex justify-content-center m-0 mt-2"
+                                            >
+                                                <label
+                                                    class="plans_unit align-self-start fw-semibold"
+                                                    >$</label
+                                                >
+                                                <span
+                                                    class="plans_num align-self-baseline fw-semibold"
+                                                    >34</span
+                                                >
+                                                <span
+                                                    class="plans_mond align-self-baseline text-opacity-50"
+                                                    >/month</span
+                                                >
+                                            </h5>
+                                        </div>
+                                        <div class="px-5 pb-5">
+                                            <ul
+                                                class="plans_list d-flex flex-column fs-6 gap-2"
+                                            >
+                                                <li>5 Dog Walk</li>
+                                                <li>3 Vet Visit</li>
+                                                <li>3 Pet Spa</li>
+                                                <li>Free Supports</li>
+                                                <li>Customer Support</li>
+                                            </ul>
+                                            <div class="btn_box mt-3">
+                                                <a class="btn" href="#"
+                                                    >Get Started</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="plans_item text-center p-5">
+                                        <h4 class="heading-3">Pro Package</h4>
+                                        <h5
+                                            class="plans_pricing d-flex justify-content-center my-4"
+                                        >
+                                            <label
+                                                class="align-self-start fw-semibold"
+                                                >$</label
+                                            >
+                                            <span
+                                                class="plans_num align-self-baseline fw-semibold"
+                                                >89</span
+                                            >
+                                            <span
+                                                class="plans_mond align-self-baseline text-opacity-50"
+                                                >/month</span
+                                            >
+                                        </h5>
+                                        <ul
+                                            class="plans_list d-flex flex-column fs-6 gap-2 mt-3"
+                                        >
+                                            <li>5 Dog Walk</li>
+                                            <li>3 Vet Visit</li>
+                                            <li>3 Pet Spa</li>
+                                            <li>Free Supports</li>
+                                            <li>Customer Support</li>
+                                        </ul>
+                                        <a class="btn mt-4" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutrition-section" id="nutrition">
+                <div class="container">
+                    <div class="nutrition">
+                        <div class="nutrition_title text-center">
+                            <h2 class="heading-1">BETTER PET NUTRITION.</h2>
+                            <h3 class="heading-2">
+                                The Finest Fresh Food And All Your Pet Needs.
+                            </h3>
+                            <p class="para">
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.Lorem ipsum dolor sit amet elit
+                                consec tetur adipisi elit. Lorem ipsum dolor sit
+                                amet elit consec tetur adipisi elit. Iure
+                                voluptatibus explicabo officia.
+                            </p>
+                        </div>
+                        <div class="nutrition_video mt-5">
+                            <div class="nutrition_img filter4">
+                                <img src="./img/img_video.png" alt="" />
+                            </div>
+                            <button
+                                class="video-play-icon"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModalCenter"
+                            >
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="modal fade"
+                            id="exampleModalCenter"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="container">
+                                    <div class="modal-content">
+                                        <video width="100%" controls>
+                                            <source
+                                                src="./img/Dog_video.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials-section">
+                <div class="container">
+                    <div class="testimonials">
+                        <div class="testimonials_title text-center">
+                            <h2 class="heading-1">TESTIMONIALS</h2>
+                            <h3 class="heading-2">Happy Clients & Feedbacks</h3>
+                        </div>
+
+                        <div class="testimonials_content mt-5">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="row mb-5 gap-0 row-gap-3">
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar2.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Roy Linderson
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar1.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Julia sakura
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row mb-5 gap-0 row-gap-3">
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar3.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Roy Linderson
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar4.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Julia sakura
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row mb-5 gap-0 row-gap-3">
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar5.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Roy Linderson
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar6.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Julia sakura
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row mb-5 gap-0 row-gap-3">
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar7.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Roy Linderson
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div
+                                                    class="testimonials_item p-5"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-quote-left"
+                                                    ></i>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Velit
+                                                        beatae laudantium
+                                                        voluptate rem ullam
+                                                        dolore nisi voluptatibus
+                                                        esse quasi, doloribus
+                                                        tempora. Dolores
+                                                        molestias adipisci dolor
+                                                        sit amet!.
+                                                    </p>
+                                                    <div
+                                                        class="testimonials_author d-flex align-items-center gap-3 mt-4"
+                                                    >
+                                                        <div
+                                                            class="testimonials_avatar"
+                                                        >
+                                                            <img
+                                                                src="./img/avatar8.jpg"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="testimonials_info"
+                                                        >
+                                                            <p
+                                                                class="testimonials_name1 fs-5 fw-bold"
+                                                            >
+                                                                Julia sakura
+                                                            </p>
+                                                            <p
+                                                                class="testimonials_name2"
+                                                            >
+                                                                Example City
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe-section">
+                <div class="container">
+                    <div class="subscribe">
+                        <div class="subscribe_title text-center">
+                            <h3 class="heading-2">Stay Updated!</h3>
+                            <p class="para">
+                                Vestibulum ante ipsum primis in faucibus orci
+                                luctus et ultrices posuere cubilia Curae; Nulla
+                                mollis dapibus nunc, ut rhoncus turpis sodales
+                                quis. Integer sit amet mattis quam.
+                            </p>
+                        </div>
+                        <div class="subscribe_content mt-5">
+                            <form class="row g-3">
+                                <div class="col-12 col-lg-8">
+                                    <!-- <input
+                                        class="form-control p-3"
+                                        id="inputPassword2"
+                                        placeholder="Password"
+                                    /> -->
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="floatingInput"
+                                            placeholder="name@example.com"
+                                        />
+                                        <label for="floatingInput py-5"
+                                            >Email address</label
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="d-grid">
+                                        <button
+                                            type="submit"
+                                            class="btn btn-primary p-3 mb-3"
+                                        >
+                                            Subcribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div style="width: 100%; height: 1000px"></div> -->
+        </main>
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer">
+                    <div class="row gap-0 row-gap-5">
+                        <ul
+                            class="col-sm-12 col-lg-6 list-unstyled d-flex flex-column gap-3"
+                        >
+                            <li class="fs-5 fw-semibold mb-3">
+                                Contact information
+                            </li>
+                            <li>
+                                <span class="fw-bold">Address</span> : #135
+                                block, Barnard St. Brooklyn, London 10036, UK
+                            </li>
+                            <li>
+                                <span class="fw-bold">Phone</span> :
+                                <a href="tel:0836789578">+(12)234-11-24</a>
+                            </li>
+                            <li>
+                                <span class="fw-bold">Email</span> :
+                                <a href="mailto:vulebaolong@gmail.com"
+                                    >example@mail.com</a
+                                >
+                            </li>
+                            <li class="d-flex gap-3">
+                                <a href="#"
+                                    ><i class="fa-brands fa-facebook-f"></i
+                                ></a>
+                                <a href="#"
+                                    ><i class="fa-brands fa-twitter"></i
+                                ></a>
+                                <a href="#"
+                                    ><i class="fa-solid fa-basketball"></i
+                                ></a>
+                                <a href="#"
+                                    ><i class="fa-brands fa-google"></i
+                                ></a>
+                            </li>
+                        </ul>
+                        <ul
+                            class="col-6 col-sm-4 col-lg-2 list-unstyled d-flex flex-column gap-3"
+                        >
+                            <li class="fs-5 fw-semibold mb-3">Company</li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog Posts</a>
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul
+                            class="col-6 col-sm-4 col-lg-2 list-unstyled d-flex flex-column gap-3"
+                        >
+                            <li class="fs-5 fw-semibold mb-3">Quick Links</li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Create Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Care Center</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Feedack</a>
+                            </li>
+                        </ul>
+                        <ul
+                            class="col-sm-4 col-lg-2 list-unstyled d-flex flex-column gap-3"
+                        >
+                            <li class="fs-5 fw-semibold mb-3">Support</li>
+                            <li><a href="#">All Dogs</a></li>
+                            <li>
+                                <a href="#">Care Advices</a>
+                            </li>
+                            <li>
+                                <a href="#">Care Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Veterinary Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <section class="design-section py-3">
+            <div class="container">
+                <div class="design">
+                    <p class="text-center fs-6">
+                        © 2020 Pooch Care. All Rights Reserved. Design by
+                        <a class="text-danger" href="#">W3Layouts</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="backToTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+
+        <!-- BOOTSTRAP -->
+        <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+
+        <!-- SWIPER -->
+        <script src="./library/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            })
+        </script>
+
+        <!-- JAVA -->
+        <script type="module" defer src="./js/index.js"></script>
+    </body>
+</html>

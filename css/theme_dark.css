@@ -1,0 +1,30 @@
+[data-bs-theme="dark"] {
+    /* nên tối */
+    --color-bg-body: #212529;
+
+    --color-text-1-bgInLight: #ddd;
+    --color-text-2-bgInLight: #afafaf;
+    --color-text-2-bgInDark: #afafaf;
+
+    --color-section: #1a1d20;
+
+    --color-dot-testimonials: #fff;
+
+    --color-bg-plan_item: #161616;
+
+    --color-bg-service_icon: #161616;
+
+    /* ============================== */
+    --color-body: #adb5bd;
+
+    --color-bg-futures_item: #343a40;
+
+    --color-bg-dropdown_menu: #212529;
+
+    --color-bg-dropdown_item-hover: #2b3035;
+    --color-text-dropdown_item-active: #fff;
+
+    --color-bor-navbar-toggler: rgba(248, 249, 250, 0.15);
+    --color-navbar-toggler: rgba(248, 249, 250, 0.65);
+    --color-icon-nav: rgba(255, 255, 255, 0.55);
+}
