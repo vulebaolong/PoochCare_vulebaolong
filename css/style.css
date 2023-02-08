@@ -48,6 +48,10 @@
     height: 100%;
 }
 
+.navbar_mobile > li {
+    cursor: pointer;
+}
+
 .dropdown-menu {
     background-color: var(--color-bg-dropdown_menu);
 }

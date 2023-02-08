@@ -33,7 +33,6 @@ body {
     font-family: "Jost", sans-serif;
     background-color: var(--color-bg-body);
     color: var(--color-body) !important;
-    transition: all 0.3s;
 }
 
 p {
