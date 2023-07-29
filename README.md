@@ -30,5 +30,5 @@ Pet Lover? Join Poochcare today and let us take care of your furry friends!
 
 ## Installation
 
-Clone the repository and run the following command to install dependencies:
+Clone the repository and run the following command to install dependencies: npm install
 
