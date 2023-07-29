@@ -1,6 +1,6 @@
 # Poochcare
 
-![Poochcare Logo](./img/favicons//pngfind.com-soundcloud-icon-png-412941.png)
+![Poochcare Logo](./img/favicons//favicon-32x32.png)
 
 Poochcare is a website dedicated to providing quality care and products for loving pets. Our mission is to deliver happiness to pets and keep them smiling. We truly love your pets as if they are our own.
 
