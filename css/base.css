@@ -110,3 +110,27 @@ footer {
 .container-full {
     width: 100%;
 }
+
+/*! SCROLLBAR - start */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(100, 116, 139, 0.502) rgba(100, 116, 139, 0.161);
+}
+*::-webkit-scrollbar {
+	width: 0.375rem;
+}
+/* CSS cho thanh cuộn ngang */
+*::-webkit-scrollbar:horizontal {
+	height: 0.375rem;
+}
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track:horizontal,
+*::-webkit-scrollbar-corner {
+	background-color: rgba(100, 116, 139, 0.161);
+}
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb:horizontal {
+	border-radius: 5px;
+	background-color: rgba(100, 116, 139, 0.502);
+}
+/* SCROLLBAR - end */
